@@ -19,6 +19,7 @@
     "node-talisman": "^1.29.11"
   },
   "scripts": {
-    "postinstall": "(([ \"$NODE_ENV\" = \"production\" ] && echo '') || ( is-ci && echo '' ) ) || husky"
+    "postinstall": "(([ \"$NODE_ENV\" = \"production\" ] && echo '') || ( is-ci && echo '' ) ) || husky",
+    "postdeploy": "echo 'postdeploy'"
   }
 }

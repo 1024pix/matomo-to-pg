@@ -1,0 +1,22 @@
+{
+  "name": "Matomo-to-pg POC",
+  "env": {},
+  "scripts": {
+    "first-deploy": "npm run postdeploy"
+  },
+  "addons": [
+    {
+      "plan": "postgresql:postgresql-sandbox",
+      "options": {
+        "version": "15.10"
+      }
+    }
+  ],
+  "formation": {
+    "web": {
+      "amount": 1,
+      "size": "S"
+    }
+  },
+  "stack": "scalingo-22"
+}
